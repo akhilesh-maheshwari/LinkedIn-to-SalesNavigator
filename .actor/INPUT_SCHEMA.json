@@ -1,0 +1,24 @@
+{
+  "title": "LinkedIn URL to Sales Nav URL",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "fileName": {
+      "title": "File Name / Tag",
+      "type": "string",
+      "description": "A label for this run.",
+      "editor": "textfield",
+      "default": "LSN_Run"
+    },
+    "profiles": {
+      "title": "LinkedIn URLs (Single or Bulk)",
+      "type": "array",
+      "description": "LinkedIn profile URLs to convert to Sales Navigator URLs.",
+      "editor": "stringList",
+      "prefill": [
+        "https://www.linkedin.com/in/williamhgates"
+      ]
+    }
+  },
+  "required": ["fileName", "profiles"]
+}
